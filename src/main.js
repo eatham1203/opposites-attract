@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mbtiInput = document.getElementById('mbtiInput');
   const result = document.getElementById('compatibilityResult');
 
-  const amazing = ['ENFJ', 'INTJ', 'ENFP', 'ENTP', 'INTP'];
+  const amazing = ['ENFJ', 'INTJ', 'ENFP', 'ENTP', 'INTP', 'ENTJ'];
   const good = ['ISTJ', 'ESTJ', 'INFJ', 'ISFJ', 'ESTP', 'ISTP'];
   const bad = ['INFP', 'ISFP', 'ESFP', 'ESFJ'];
 

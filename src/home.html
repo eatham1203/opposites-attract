@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="sm:scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="favicon" href="./img/16logo.png">
+    <title>Opposites Attract</title>
+    <link rel="stylesheet" href="output.css" >
+</head>
+
+<body class="min-h-screen bg-gradient-to-r from-purple-400 via-white to-yellow-400 text-white">
+    <header class="bg-white text-[var(--color-navbar)] sticky top-0 z-10">
+        <section class="max-w-6xl mx-auto px-4 py-2 flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="index.html">
+                    <img src="./img/16logotest.png" alt="MBTI Logo" class="w-12 h-12 object-contain" />
+                </a>
+                <h1 class="text-3xl font-extrabold hidden md:block">
+                    <a href="index.html">MBTI Attractions</a>
+                </h1>
+            </div>
+
+            <div>
+                <button id="mobile-open-button" class="text-3xl sm:hidden focus:outline-none">
+                    &#9776;
+                </button>
+                <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
+                    <a href="#Home" class="hover:opacity-50"> Home</a>
+                    <a href="#About" class="hover:opacity-90">About Me</a>
+                    <a href="#Compatability" class="hover:opacity-90">Compatability</a>
+                </nav>
+            </div>
+        </section>
+    </header>
+    
+    <main class="mx-auto">
+        <section id="Home" class="flex flex-col-reverse justify-center sm:flex-row pb-12 pl-12 pr-12 items-center gap-8 scroll-mt-10 bg-linear-to-bl from-black to-slate-700">
+            <article class="sm:w-1/2 flex flex-col justify-center items-center text-center sm:text-left">
+                <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-white">
+                    <span class="hover:text-red-400 transition-colors duration-300">Why</span>
+                    <span class="hover:text-indigo-300 transition-colors duration-300">MBTI</span>
+                    <span class="hover:text-blue-400 transition-colors duration-300">and</span>
+                    <span class="hover:text-green-400 transition-colors duration-300">Opposites</span>
+                    <span class="hover:text-yellow-400 transition-colors duration-300">Attract?</span>
+                </h2>
+
+                <p class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-400 hover:text-green-300 duration-300">
+                    At first, I struggled to find a fresh take on the theme <em>"Opposites Attract"</em>. Then it hit me 🧐 Personality types, especially in MBTI, are built on contrast. And yet, those differences often spark the strongest connections.
+                </p>
+
+                <a href="#About" class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-400 hover:text-red-300 duration-300">
+                    Let's see if we are compatible at the end of this website!
+                </a>
+
+            </article>
+
+            <!-- Carousel Wrapper -->
+            <div class="relative w-full max-w-md mx-auto overflow-hidden scale-90 rounded-2xl shadow-lg">
+                <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+                        <img src="./img/mixture.jpg" class="w-full shrink-0"/>
+                        <img src="./img/descriptive.jpg" class="w-full shrink-0"/>
+                        <img src="./img/opinion.jpg" class="w-full shrink-0"/>
+                </div>
+
+                <button
+                    id="prevBtn"
+                    class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full hover:bg-black/60 z-10"
+                >
+                    <i class="fa-solid fa-backward-step"></i>
+                </button>
+                <button
+                    id="nextBtn"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full hover:bg-black/60 z-10"
+                >
+                    <i class="fa-solid fa-forward-step"></i>
+                </button>
+            </div>
+        </section>
+
+        <div class="bg-[url(./img/background2.png)] bg-no-repeat bg-cover bg-center">
+            <section id="About" class="flex flex-col justify-center sm:flex-row max-w-5xl mx-auto p-6 items-center rounded-b-4xl gap-8 scroll-mt-10">
+                <div class="w-1/2 scale-90">
+                    <img src="./img/entj.png" class="pt-30 animate-bounce duration-300 hover:scale-80 hover:animate-spin hover:[animation-duration:2s]" alt="ENTJ">
+                </div>
+                
+                <article class="sm:w-1/2 m-auto p-4 rounded-4xl bg-black/30">
+                    <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-white">
+                        <span class="hover:text-rose-600 transition-colors duration-300">Get</span>
+                        <span class="hover:text-indigo-700 transition-colors duration-200">to</span>
+                        <span class="text-black hover:text-blue-400 transition-colors duration-300">Know</span>
+                        <span class="text-black hover:text-green-400 transition-colors duration-300">My</span> <br>
+                        <span class="text-black hover:text-yellow-400 transition-colors duration-300">Personality...</span>
+                    </h2>
+                    <li class="max-w-md text-2xl font-semibold mt-4 text-center sm:text-left text-slate-100">
+                        My name is Ethan and I'm a 2nd Year Computer Science Student💻
+                    </li>
+    
+                    <li class="max-w-md text-2xl font-semibold mt-4 text-center sm:text-left text-slate-100">
+                        I love going to the beach in the summer and going on random <br>excursions☀️
+                    </li>
+    
+                    <li class="max-w-md text-2xl font-semibold mt-4 text-center sm:text-left text-slate-100">
+                        I decided to challange myself to create this website using Tailwind CSS without any prior experience🚀
+                    </li>
+    
+                    <p class="hidden sm:block max-w-md text-2xl mt-8 text-center font-medium italic sm:text-left text-fuchsia-300">
+                        My MBTI is the one bouncing on the left!
+                    </p>
+                </article>
+            </section>
+        </div>    
+
+        <div class="not-only:scroll-mt-20 bg-[url(./img/background.png)] bg-no-repeat bg-cover">
+            <section id="About" class="class-6 p-12 max-w-5xl mx-auto">
+                <h2 class="text-5xl font-bold text-center sm::text-5xl mb-6 pb-10 text-slate-900">
+                    Recent Trip to Tasmania <br>
+                </h2>
+                <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8 group">
+                    <li class="flex flex-col items-center border border-solid border-gray-100 bg-black text-white py-6 px-2 rounded-3xl shadow-xl hover:shadow-amber-400/50 hover:bg-amber-300 
+                                hover:text-black transition-colors duration-300 animate-bounce [animation-duration:3s]">
+                        <img src="./img/house.jpg" alt="AirBnB" class="object-cover rounded-xl mb-6" />
+                        <h3 class="hidden sm:block text-2xl font-thin text-center">AirBnB🏠</h3>
+                        <p class="sm:hidden text-xl font-thin text-center mt-2 text-slate-400">Found a naked Barbie doll and Ken in the drawer</p>
+                    </li>
+    
+                    <li class=" flex flex-col items-center border border-solid border-gray-100 bg-black text-white py-6 px-2 rounded-3xl shadow-xl hover:shadow-green-500/50 hover:bg-green-400 hover:text-black  
+                                transition-colors duration-300 animate-bounce [animation-duration:4s]">
+                        <img src="./img/wineglass.jpg" alt="Wineglass" class="object-cover rounded-xl mb-6" />
+                        <h3 class="hidden sm:block text-2xl font-thin text-center">Wineglass Bay⛰️</h3>
+                        <p class="sm:hidden text-xl font-thin text-center mt-2 text-slate-400">Almost died climbing Mt Amos</p>
+                    </li>
+    
+                    <li class=" flex flex-col items-center border border-solid border-gray-100 bg-black text-white py-6 px-2 rounded-3xl shadow-xl hover:shadow-cyan-500/50 hover:bg-cyan-600 hover:text-black  
+                                transition-colors duration-300 animate-bounce [animation-duration:3s]">
+                        <img src="./img/stars.jpg" alt="stars" class="object-cover rounded-xl mb-6" />
+                        <h3 class="hidden sm:block text-2xl font-thin text-center">Stargazing🌟</h3>
+                        <p class="sm:hidden text-xl font-thin text-center mt-2 text-slate-400">It looks like this in real life</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <h2 id="Compatability" class="mx-auto text-4xl font-bold text-center sm::text-5xl text-slate-900 p-10 not-only:scroll-mt-15">
+            Can Opposite Personalities Attract <i class="fa-solid fa-comments"></i>
+        </h2>
+
+        <div class="bg-gradient-to-bl from-black to-purple-600 py-12 px-6 sm:px-12 border-y-4">
+            <div class="max-w-3xl mx-auto space-y-12">
+                <div class="flex justify-center">
+                <img src="./img/isfp.png" alt="opposite" class="max-w-full h-auto" />
+                </div>
+
+                <article class="flex flex-col sm:flex-row gap-12">
+                    <div class="sm:w-1/2 space-y-6">
+                        <h2 class="text-4xl sm:text-5xl font-bold text-center sm:text-left text-white">
+                            <span class="hover:text-purple-700 transition-colors duration-300">Let's</span>
+                            <span class="hover:text-purple-700 transition-colors duration-300">test</span>
+                            <span class="hover:text-purple-700 transition-colors duration-300">our</span> <br />
+                            <span class="text-black hover:text-yellow-300 transition-colors duration-300">attractive</span>
+                            <span class="text-black hover:text-yellow-300 transition-colors duration-300">force</span>
+                        </h2>
+                        <p class="text-2xl italic text-center sm:text-left text-white">
+                            If you are unsure of your MBTI, click 
+                            <a href="https://www.16personalities.com/free-personality-test" class="text-blue-500 hover:text-rose-400">here</a> 
+                            to find out!
+                        </p>
+                    </div>
+
+                   
+                    <div class="sm:w-1/2 space-y-6">
+                        <p class="text-xl italic text-center sm:text-left text-slate-300">
+                        Enter your MBTI Type to see our compatibility!
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 items-center sm:items-start">
+                            <input
+                                id="mbtiInput"
+                                type="text"
+                                placeholder="Type Here (e.g. INFP)"
+                                class="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                            />
+                            <button
+                                id="checkBtn"
+                                class="bg-purple-700 hover:text-black hover:bg-white text-white px-4 py-2 rounded-lg transition-colors"
+                            >
+                                Test
+                            </button>
+                        </div>
+                        <p id="compatibilityResult" class="text-2xl font-semibold text-center sm:text-left"></p>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <p class="mx-auto text-l font-bold text-center sm::text-m text-slate-900 p-10">
+            ⚠️ Disclaimer the accuracy of the compatability may not be accurate ⚠️
+        </p>    
+    </main>
+
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/16c023d389.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

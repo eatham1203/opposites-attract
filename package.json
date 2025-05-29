@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@tailwindcss/cli": "^4.1.7",
+    "tailwindcss": "^4.1.7"
+  },
+  "name": "opposites_attract",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11"
+  },
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "prettier": "npx prettier --write '**/*.html'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

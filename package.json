@@ -12,7 +12,7 @@
     "prettier-plugin-tailwindcss": "^0.6.11"
   },
   "scripts": {
-    "tailwind": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "tailwind": "npx tailwindcss -i ./input.css -o ./output.css --watch",
     "prettier": "npx prettier --write '**/*.html'"
   },
   "keywords": [],
